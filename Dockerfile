@@ -6,5 +6,5 @@ LABEL build_date "2024-02-06"
 WORKDIR /app
 COPY . .
 RUN npm install
-CMD ["node", "src/index.js"]
+CMD ["node", "app.js"]
 EXPOSE 3000

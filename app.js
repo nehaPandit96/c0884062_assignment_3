@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 
 const SERVER_PORT = process.env.PORT || 3000;
+const NAME = process.env.NAME || "Neha";
 
 // Route for the Home page
 app.get("/", (req, res) => {
@@ -17,4 +18,5 @@ app.get("/products", (req, res) => {
 // Start the server
 app.listen(SERVER_PORT, () => {
   console.log(`Server is running on http://localhost:${SERVER_PORT}`);
+  console.log(`Name: ${NAME}`);
 });
